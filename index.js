@@ -65,18 +65,23 @@ function generateHTML(answers) {
         <h1 class=" normal-case text-3xl">Portfolio</a>
     </div>
 
+    <div class="hero h-96 mb-6" style="background-image: url(https://api.lorem.space/image/pizza?w=1000&h=800);">
+        <div class="hero-overlay bg-opacity-40"></div>
+    </div>
+
     <div class="card w-5/6 bg-base-200 shadow-xl m-auto">
         <div class="card-body">
             <h2 class="card-title">${answers.name}'s Portfolio</h2>
+            <br>
             <p>${answers.bio}</p>
             <p>My hobby is ${answers.hobby}</p>
             <p>My favorite food is ${answers.food}</p>
             <p>I am currently living in ${answers.location}</p>
             <div class="divider"></div>
-            <p>My github URL is:<a class="btn btn-ghost mx-1" href="https://github.com/${answers.github}" target="_blank">${answers.github}</a></p>
-            <p>My linkedin URL is:<a class="btn btn-ghost mx-1" href="${answers.linkedin}" target="_blank">${answers.linkedin}</a></p>
+            <p>My Github URL is:<a class="btn btn-ghost normal-case mx-1" href="https://github.com/${answers.github}" target="_blank">${answers.github}</a></p>
+            <p>My LinkedIn URL is:<a class="btn btn-ghost normal-case mx-1" href="${answers.linkedin}" target="_blank">LinkedIn</a></p>
         </div>
-        </div>
+    </div>
     
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
